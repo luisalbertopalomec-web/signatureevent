@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #D4AF37;
+  --champagne: #E8DCC0;
+  --ivory: #F6F3EF;
+  --charcoal: #1A1A1A;
+  --black: #0D0D0D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f6f3ef;
+}
+
+section {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
