@@ -16,11 +16,11 @@ export default function Gallery() {
   return (
     <section
       id="galeria"
-      className="bg-[#F6F3EF] py-32"
+      className="scroll-mt-24 bg-[#F6F3EF] pt-8 pb-12 sm:pt-10 sm:pb-14 lg:pt-12 lg:pb-16"
     >
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center mb-20">
+        <div className="mb-10 text-center sm:mb-12 lg:mb-14">
 
           <p className="uppercase tracking-[8px] text-[#D4AF37] text-sm mb-4">
             Portafolio

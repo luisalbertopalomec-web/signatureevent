@@ -72,13 +72,30 @@ export default function Footer() {
 
               <div className="flex gap-3 items-center">
                 <Phone size={18} />
-                +52 55 0000 0000
+                <a href="tel:+525662842573">
+                      56 6284 2573
+                </a>
               </div>
 
-              <div className="flex gap-3 items-center">
-                <Mail size={18} />
-                hola@signatureevents.mx
-              </div>
+              <div className="flex items-center gap-3">
+              <Mail size={18} className="shrink-0" />
+
+              <a
+                href="mailto:cotiza@signaturegroup.mx"
+                className="
+                  break-all
+                  transition-colors
+                  duration-200
+                  hover:text-[#D4AF37]
+                  focus-visible:outline-2
+                  focus-visible:outline-offset-4
+                  focus-visible:outline-[#D4AF37]
+                "
+                aria-label="Enviar correo a cotiza@signaturegroup.mx"
+              >
+                cotiza@signaturegroup.mx
+              </a>
+            </div>
 
             </div>
 

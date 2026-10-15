@@ -32,22 +32,27 @@ export default function Services() {
   return (
     <section
       id="servicios"
-      className="bg-[#111111] py-32"
+      className="scroll-mt-24 bg-[#111111] pt-8 pb-6 sm:pt-10 sm:pb-8 lg:pt-12 lg:pb-8"
     >
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center mb-20">
+        <div className="mb-8 text-center sm:mb-10 lg:mb-12">
 
           <p className="uppercase tracking-[8px] text-[#D4AF37] text-sm mb-4">
             Servicios
           </p>
 
           <h2
-            style={{ fontFamily: "var(--font-cinzel)" }}
-            className="
-              text-white
-              text-5xl
-              md:text-6xl
+             style={{ fontFamily: "var(--font-cinzel)" }}
+              className="
+                mx-auto
+                max-w-6xl
+                text-white
+                text-4xl
+                leading-tight
+                sm:text-5xl
+                lg:text-[3.25rem]
+                2xl:text-[3.5rem]
             "
           >
             Diseñamos experiencias únicas

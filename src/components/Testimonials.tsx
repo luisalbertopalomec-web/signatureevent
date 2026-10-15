@@ -32,11 +32,11 @@ export default function Testimonials() {
   return (
     <section
       id="testimonios"
-      className="bg-[#111111] py-32"
+      className="scroll-mt-24 bg-[#111111] pt-8 pb-16 sm:pt-10 sm:pb-14 lg:pt-12 lg:pb-16"
     >
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center mb-20">
+        <div className="mb-8 text-center sm:mb-10 lg:mb-10">
 
           <p className="uppercase tracking-[8px] text-[#D4AF37] text-sm mb-4">
             Testimonios

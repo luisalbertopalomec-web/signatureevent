@@ -10,16 +10,31 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
-  background: #f6f3ef;
+  margin: 0;
+  background: var(--ivory);
+  color: var(--charcoal);
 }
 
 section {
   position: relative;
 }
 
+/* Evita que los enlaces internos queden bajo el menú fijo. */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 a {
   text-decoration: none;
+}
+
+/* Reduce el movimiento cuando el visitante lo solicita. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
