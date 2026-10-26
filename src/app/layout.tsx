@@ -13,18 +13,60 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Signature Events | Eventos Premium",
+  metadataBase: new URL("https://signaturegroup.mx"),
+
+  // Título principal y estructura de títulos
+  title: {
+    default: "Signature Events | Bodas y Eventos Premium en CDMX",
+    template: "%s | Signature Events",
+  },
+
+  // Descripción que pueden utilizar los buscadores
   description:
-    "Planeación de bodas, eventos corporativos y sociales de lujo.",
-  keywords: [
-    "Wedding Planner",
-    "Event Planner",
-    "Eventos Corporativos",
-    "Bodas",
-    "Eventos Sociales",
-    "Luxury Events",
-    "Signature Events",
-  ],
+    "Diseñamos y coordinamos bodas, eventos corporativos y celebraciones exclusivas en Ciudad de México. Creamos experiencias memorables con elegancia, planeación y atención a cada detalle.",
+
+  // URL canónica de la página principal
+  alternates: {
+    canonical: "/",
+  },
+
+  // Indicaciones para los buscadores
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  // Metadatos para compartir el sitio
+  openGraph: {
+    type: "website",
+    locale: "es_MX",
+    url: "https://signaturegroup.mx/",
+    siteName: "Signature Events",
+    title: "Signature Events | Bodas y Eventos Premium en CDMX",
+    description:
+      "Bodas, eventos corporativos y celebraciones exclusivas diseñadas con elegancia en Ciudad de México.",
+    images: [
+      {
+        url: "/hero.webp",
+        alt: "Signature Events: diseño y organización de eventos premium",
+      },
+    ],
+  },
+
+  // Vista previa al compartir enlaces en plataformas compatibles
+  twitter: {
+    card: "summary_large_image",
+    title: "Signature Events | Bodas y Eventos Premium en CDMX",
+    description:
+      "Diseñamos bodas, eventos corporativos y celebraciones exclusivas en Ciudad de México.",
+    images: ["/hero.webp"],
+  },
 };
 
 export default function RootLayout({
